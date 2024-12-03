@@ -16,4 +16,4 @@ When you're accepted there is one last step you need to take. You need to login 
 
 </section>
 
-<a href="/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>
+<a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>

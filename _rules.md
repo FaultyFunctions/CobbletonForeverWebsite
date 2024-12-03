@@ -25,4 +25,4 @@
 
 </section>
 
-<a href="/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>
+<a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>
