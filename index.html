@@ -7,19 +7,210 @@
 		<meta name="description" content="A classic-style Minecraft server with a focus on community and quality of life.">
 		<title>Cobbleton Forever</title>
 		<!-- Themes (light + dark) -->
-		<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-		<link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
 		<!-- Custom Styles -->
+		<link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
+		<link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
+		<link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
+		<link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 		<style>
 			:root {
+				/* Basic */
+				--base-background-color: #293338;
+				--base-color: #f8f8f2;
+				--base-font-weight: 400;
+				--strong-color: #fff;
+				--strong-font-weight: 600;
+				--base-font-family: 'Rubik', sans-serif;
+				--heading-font-family: 'Rubik', sans-serif;
+				--heading-font-weight: 600;
+				--heading-h1-font-weight: var(--heading-font-weight);
+				--heading-h2-font-weight: var(--heading-font-weight);
+				--heading-h3-font-weight: var(--heading-font-weight);
+				--heading-h4-font-weight: var(--heading-font-weight);
+				--heading-h5-font-weight: var(--heading-font-weight);
+				--heading-h6-font-weight: var(--heading-font-weight);
+
+				/* Content */
+				--content-max-width: 62em;
+				--link-color--hover: var(--theme-color);
+				--heading-h1-color: var(--theme-color);
+				--heading-h2-color: var(--theme-color);
+				--heading-h2-border-color: var(--theme-color);
+				--table-head-border-width: 1px;
+				--table-cell-border-width: 1px;
+				--table-row-odd-background: #242e33;
+
+				/* Navbar */
+				--navbar-root-border-color: var(--theme-color);
+				--navbar-root-color: var(--theme-color);
+				--navbar-root-color--hover: var(--background);
+				--navbar-root-background--hover: var(--theme-color);
+				--navbar-root-border-width: 1px;
+				--navbar-root-border-radius: 5px;
+				--navbar-root-padding: 5px;
+				--navbar-root-margin: 0 0 0 1em;
+
 				/* APP */
-				--theme-hue: 40;
+				--theme-color: #FFAA00;
 
 				/* COVER */
 				--cover-max-width: 80em;
-				--cover-background-image: url('http://localhost:3000/_assets/cover_image_sunrise.png');
-				--cover-background-mask-visibility: visble;
-				--cover-background-mask-opacity: 0.5;
+				--cover-background-image: url('http://localhost:3000/_assets/cover_image.png');
+				--cover-background-mask-visibility: visible;
+				--cover-background-mask-opacity: 60%;
+				--cover-button-border: 1px solid var(--theme-color);
+				--cover-button-background--hover: var(--theme-color);
+				--cover-button-primary-background: rgba(0, 0, 0, 0);
+
+				/* SIDEBAR */
+				--sidebar-width: 24rem;
+
+				/* CONTENT */
+				--code-inline-color: var(--theme-color);
+				--link-color: #00AAAA;
+				--link-color--hover: #55FFFF;
+			}
+
+			.coverpage {
+				text-align: left;
+				border-left: 2px solid var(--theme-color);
+				padding: 10px 20px 10px 30px;
+				background: var(--cover-background-mask-color);
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				max-width: var(--content-max-width)
+			}
+
+			/* .coverpage li::marker {
+				content: '•  ';
+				font-size: 1.2em;
+			} */
+
+			.coverpage-button {
+				border: var(--cover-button-primary-border, var(--cover-button-border)) !important;
+				margin: .375em .25em;
+				display: inline-block;
+				padding: var(--cover-button-padding);
+				border-radius: var(--cover-button-border-radius);
+				text-decoration: none !important;
+			}
+
+			.coverpage-button:hover {
+				background: var(--cover-button-primary-background--hover, var(--cover-button-background--hover, var(--cover-button-primary-background, var(--cover-button-background)))) !important;
+			}
+
+			.coverpage ul {
+				list-style-type: disc;
+				padding-inline-start: 2rem;
+				margin-top: 0;
+			}
+
+			.coverpage h1 {
+				pointer-events: none;
+				font-size: var(--heading-h1-font-size);
+				margin-bottom: 0;
+			}
+
+			.coverpage h2 {
+				pointer-events: none;
+				font-size: var(--heading-h2-font-size);
+				margin-bottom: 0;
+			}
+
+			.coverpage h3 {
+				pointer-events: none;
+				font-size: var(--heading-h3-font-size);
+				margin-bottom: 0;
+			}
+
+			.coverpage h1 a,.coverpage h2 a,.coverpage h3 a {
+				text-decoration: none;
+				color: var(--theme-color);
+			}
+
+			.coverpage h1 a:hover,.coverpage h2 a:hover,.coverpage h3 a:hover {
+				text-decoration: none;
+			}
+
+			.coverpage a {
+				color: var(--link-color);
+			}
+
+			.coverpage a:hover {
+				color: var(--link-color--hover);
+			}
+
+			.coverpage code:not([class*=lang-]):not([class*=language-]) {
+				font-family: var(--code-font-family);
+				font-size: var(--code-font-size);
+				font-weight: var(--code-font-weight);
+				margin: var(--code-inline-margin);
+				padding: var(--code-inline-padding);
+				border-radius: var(--code-inline-border-radius);
+				background: var(--code-inline-background);
+				color: var(--code-inline-color, currentColor);
+				white-space: nowrap;
+			}
+
+			a code:hover {
+				color: var(--theme-color) !important;
+				transition: 0.25s;
+			}
+			a code {
+				transition: 0.25s;
+			}
+			a:hover {
+				color: var(--theme-color);
+				transition: 0.25s;
+			}
+			a {
+				text-underline-offset: 2px;
+				transition: 0.25s;
+			}
+			footer a {
+				text-decoration: none !important;
+				font-weight: bold;
+			}
+
+			.alert.callout {
+				background-color: var(--notice-tip-background) !important;
+				border-right: 0 !important;
+				border-top: 0 !important;
+				border-bottom: 0 !important;
+				border-radius: 0 !important;
+			}
+
+			.cover:after {
+				backdrop-filter: blur(8px);
+			}
+
+			body {
+				--sb-track-color: var(--sidebar-background);
+				--sb-thumb-color: var(--theme-color);
+				--sb-size: 14px;
+			}
+
+			body::-webkit-scrollbar {
+				width: var(--sb-size)
+			}
+
+			body::-webkit-scrollbar-track {
+				background: var(--sb-track-color);
+			}
+
+			body::-webkit-scrollbar-thumb {
+				background: var(--sb-thumb-color);
+			}
+
+			@supports not selector(::-webkit-scrollbar) {
+				body {
+					scrollbar-color: var(--sb-thumb-color)
+									var(--sb-track-color);
+				}
 			}
 		</style>
 	</head>
@@ -31,17 +222,21 @@
 			  name: '',
 			  repo: '',
 			  loadSidebar: true,
-			  coverpage: true,
+			  coverpage: {
+				'/': '_coverpage.md',
+				'/apply': '_apply.md',
+				'/rules': '_rules.md',
+				'/about': '_about.md'
+			  },
+			  onlyCover: true,
+			  routerMode: 'history',
 			  'flexible-alerts': {
-			    style: 'flat'
 			  }
 			}
 		</script>
-		<!-- Required -->
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 		<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
-		<!-- Recommended -->
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
 	</body>
