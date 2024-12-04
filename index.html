@@ -18,6 +18,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 		<link rel="preload" as="image" href="https://github.com/FaultyFunctions/CobbletonForeverWebsite/blob/main/_assets/cover_image.avif?raw=true">
 		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
+		<script type="text/javascript" src="_assets/js/Flake.js"></script>
+		<script type="text/javascript" src="_assets/js/Snowfall.js"></script>
 		<style>
 			:root {
 				/* Basic */
@@ -84,13 +86,8 @@
 				background: var(--cover-background-mask-color);
 				border-top-right-radius: 20px;
 				border-bottom-right-radius: 20px;
-				max-width: var(--content-max-width)
+				max-width: var(--content-max-width);
 			}
-
-			/* .coverpage li::marker {
-				content: '•  ';
-				font-size: 1.2em;
-			} */
 
 			.coverpage-button {
 				border: var(--cover-button-primary-border, var(--cover-button-border)) !important;
@@ -219,12 +216,19 @@
 				text-align: right;
 			}
 
-			/*.coverpage-footer::after {
-				content: 'Cobbleton Forever is not affiliated with or endorsed by Minecraft, Mojang AB, or Microsoft.';
-			}*/
+			#snowfall {
+				pointer-events: none;
+				z-index: 1000;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+			}
 		</style>
 	</head>
 	<body>
+		<canvas id="snowfall"></canvas>
 		<div id="app"></div>
 		<script>
 			// Docsify Configuration
@@ -243,6 +247,24 @@
 				'flexible-alerts': {
 				},
 			}
+			let snow = new Snowfall("#snowfall", {
+				images: [
+					"_assets/images/flake1.png",
+					"_assets/images/flake2.png",
+					"_assets/images/flake3.png",
+					"_assets/images/flake4.png",
+					"_assets/images/flake5.png",
+					"_assets/images/flake6.png",
+					"_assets/images/flake7.png"
+				],
+				count: 25,
+				size: {
+					min: 10,
+					max: 30
+				}
+			});
+			
+			snow.start();
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
