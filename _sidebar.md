@@ -6,7 +6,8 @@
 	* [Capture Crystals](guides/gameplay/capture-crystals.md)
 	* [Resource World](guides/gameplay/resource-world.md)
 - Modpack
-	* [Installing the Modpack](guides/modpack/modpack.md)
+	* [Installing the Modpack](guides/modpack/modpack-install.md)
+	* [Updating the Modpack](guides/modpack/modpack-update.md)
 	* [Notable Mods](guides/modpack/notable-mods.md)
 	* [Quality of Life Tweaks](guides/modpack/quality-of-life)
 - Discord

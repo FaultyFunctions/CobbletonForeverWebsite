@@ -22,6 +22,10 @@ Cobbleton Forever is a community-oriented server where cooperation and collabora
 
 </section>
 
-<a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>
+<a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Home</a>
 
-<footer class='coverpage-footer'></footer>
+<footer class='coverpage-footer'>
+<span>Contact: </span><a href="mailto:support@cobbleton.com">support@cobbleton.com</a>
+<br>
+<span>Cobbleton Forever is not affiliated with or endorsed by Minecraft, Mojang AB, or Microsoft.</span>
+</footer>

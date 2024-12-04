@@ -14,4 +14,8 @@
 <a href="https://map.cobbleton.com" target="_blank" class="coverpage-button">Map</a>
 <a href="https://wiki.cobbleton.com" target="_blank" class="coverpage-button">Wiki</a>
 
-<footer class='coverpage-footer'><br></footer>
+<footer class='coverpage-footer'>
+<span>Contact Us: </span><a href="mailto:support@cobbleton.com">support@cobbleton.com</a>
+<br>
+<span>Cobbleton Forever is not affiliated with or endorsed by Minecraft, Mojang AB, or Microsoft.</span>
+</footer>
