@@ -2,13 +2,15 @@
 
 <section class='coverpage'>
 
-### General Rules
+<h3>General Rules</h3>
+
 * Be respectful of others
 * No offensive memes or content
 * No NSFW content
 * Swearing is allowed but keep it respectful
 
-### Minecraft Rules
+<h3>Minecraft Rules</h3>
+
 * Don't steal or grief other's property
 * PVP is not allowed unless all parties involved consent
 * Keep the world tidy (no 1x1 towers)
@@ -16,7 +18,8 @@
 * No cheating, exploits, or hacked clients
 * Don't overcrowd entities
 
-### Farm Rules
+<h3>Farm Rules</h3>
+
 * Mob farms are generally allowed (within reason) but they must have an off switch
 * Raid farms are not allowed
 * No floating mob farms
@@ -26,3 +29,5 @@
 </section>
 
 <a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>
+
+<footer class='coverpage-footer'><br></footer>

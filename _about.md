@@ -2,11 +2,12 @@
 
 <section class='coverpage'>
 
-## About Us
+<h2>About Us</h2>
 
 Cobbleton Forever is a community-oriented server where cooperation and collaboration are strongly encouraged. We aim for a positive and friendly atmosphere where players can enjoy building close to others without the need to worry about destruction. Our goal is to deliver the Minecraft experience you know, but also to supplement it with extra elements that we hope will make the multiplayer experience more enjoyable for everyone who wants to play.
 
-### Features
+<h3>Features</h3>
+
 * Pouches and backpacks
 * Portal Scrolls: Craftable, limited-use items that allow teleportation to the world spawn point, the player's bed, lodestones, and previous locations. An inventory replacement for `/home`, `/spawn`, and `/back` commands.
 * Custom furniture you can buy from Fern's Furniture.
@@ -17,10 +18,10 @@ Cobbleton Forever is a community-oriented server where cooperation and collabora
 * A creative world for you to test out builds and for server competitions.
 * Quality over quantity mindset. No P2W mechanics.
 * A client-side modpack to enhance your gameplay experience!
-* ...and many more!
+* **...and many more!**
 
 </section>
 
 <a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Return</a>
 
-<footer></footer>
+<footer class='coverpage-footer'></footer>

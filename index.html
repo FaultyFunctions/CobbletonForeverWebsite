@@ -17,6 +17,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 		<link rel="preload" as="image" href="https://github.com/FaultyFunctions/CobbletonForeverWebsite/blob/main/_assets/cover_image.avif?raw=true">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
 		<style>
 			:root {
 				/* Basic */
@@ -111,19 +112,19 @@
 			}
 
 			.coverpage h1 {
-				pointer-events: none;
+				color: var(--theme-color);
 				font-size: var(--heading-h1-font-size);
 				margin-bottom: 0;
 			}
 
 			.coverpage h2 {
-				pointer-events: none;
+				color: var(--theme-color);
 				font-size: var(--heading-h2-font-size);
 				margin-bottom: 0;
 			}
 
 			.coverpage h3 {
-				pointer-events: none;
+				color: var(--theme-color);
 				font-size: var(--heading-h3-font-size);
 				margin-bottom: 0;
 			}
@@ -172,10 +173,6 @@
 				text-underline-offset: 2px;
 				transition: 0.25s;
 			}
-			footer a {
-				text-decoration: none !important;
-				font-weight: bold;
-			}
 
 			.alert.callout {
 				background-color: var(--notice-tip-background) !important;
@@ -213,6 +210,19 @@
 									var(--sb-track-color);
 				}
 			}
+
+			.coverpage-footer {
+				pointer-events: none;
+				position: fixed;
+				bottom: 0;
+				right: 1em;
+				color: DarkGray;
+				text-align: right;
+			}
+
+			.coverpage-footer::after {
+				content: 'Cobbleton Forever is not affiliated with or endorsed by Minecraft, Mojang AB, or Microsoft.';
+			}
 		</style>
 	</head>
 	<body>
@@ -220,20 +230,48 @@
 		<script>
 			// Docsify Configuration
 			window.$docsify = {
-			  name: '',
-			  repo: '',
-			  basePath: '',
-			  loadSidebar: true,
-			  coverpage: {
-				'/': '_coverpage.md',
-				'/apply': '_apply.md',
-				'/rules': '_rules.md',
-				'/about': '_about.md'
-			  },
-			  onlyCover: true,
-			  'flexible-alerts': {
-			  }
+				name: '',
+				repo: '',
+				basePath: '',
+				loadSidebar: true,
+				coverpage: {
+					'/': '_coverpage.md',
+					'/apply': '_apply.md',
+					'/rules': '_rules.md',
+					'/about': '_about.md'
+				},
+				onlyCover: true,
+				'flexible-alerts': {
+				},
+				plugins: [
+					function replaceDate(hook, vm) {
+						hook.doneEach(() => {
+							window.addEventListener('load', (event) => {
+								var elements = document.getElementsByClassName("coverpage-footer")
+								console.log("Hello")
+								for (var i = 0; i < elements.length; i++) {
+									elements[i].setAttribute('data-date', new Date().getFullYear())
+								}
+							}, {once: true})
+
+							window.addEventListener('hashchange', (event) => {
+								var elements = document.getElementsByClassName("coverpage-footer")
+								console.log("Hello")
+								for (var i = 0; i < elements.length; i++) {
+									elements[i].setAttribute('data-date', new Date().getFullYear())
+								}
+							}, {once: true})
+						})
+					}
+				]
 			}
+			// window.addEventListener('load', (event) => {
+			// 	var elements = document.getElementsByClassName("coverpage-footer")
+			// 	console.log("Hello")
+			// 	for (var i = 0; i < elements.length; i++) {
+			// 		elements[i].setAttribute('data-date', new Date().getFullYear())
+			// 	}
+			// })
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
