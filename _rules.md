@@ -31,7 +31,13 @@
 <a href="#/" class='coverpage-button'><i class="fa-solid fa-left-long" style='padding-right: 10px;'></i>Home</a>
 
 <footer class='coverpage-footer'>
-<span>Contact: </span><a href="mailto:support@cobbleton.com">support@cobbleton.com</a>
+<a href="mailto:support@cobbleton.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>&nbsp;&nbsp;
+<a href="https://cobbleton.com/discord" target="_blank"><i class="fa-brands fa-discord"></i></a>&nbsp;&nbsp;
+<a href="https://bsky.app/profile/cobbleton.com" target="_blank"><i class="fa-brands fa-bluesky"></i></a>&nbsp;&nbsp;
+<a href="https://www.instagram.com/cobbletonforever" target="_blank"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;
+<a href="https://www.tiktok.com/@cobbletonforever" target="_blank"><i class="fa-brands fa-tiktok"></i></a>&nbsp;&nbsp;
+<a href="https://www.youtube.com/@CobbletonForever" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
 <br>
 <span>Cobbleton Forever is not affiliated with or endorsed by Minecraft, Mojang AB, or Microsoft.</span>
 </footer>
