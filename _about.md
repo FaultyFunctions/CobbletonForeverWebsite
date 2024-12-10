@@ -14,7 +14,7 @@ Cobbleton Forever is a community-oriented server where cooperation and collabora
 * Tons of quality of life changes like paths applying speed, crops giving XP, stonecutter recipes being expanded to include wood and other blocks, and many more.
 * Proximity voice chat with the client-side Simple Voice Chat mod.
 * Fortnite style pinging with the client-side Ping Wheel mod.
-* A weekly rotating single-biome resource world.
+* A weekly rotating resource world.
 * A creative world for you to test out builds and for server competitions.
 * Quality over quantity mindset. No P2W mechanics.
 * A client-side modpack to enhance your gameplay experience!

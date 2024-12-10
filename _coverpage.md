@@ -4,15 +4,15 @@
 
 > a classic-style Minecraft server with a focus on community and quality of life
 
-> ⭐ play.cobbleton.com ⭐
+> ⭐ *play.cobbleton.com* ⭐
 
-<a href="#/about" class="coverpage-button">About Us</a>
-<a href="#/apply" class="coverpage-button">Apply</a>
-<a href="#/rules" class="coverpage-button">Rules</a>
-<a href="#/guides/general/first-day" class="coverpage-button">Guides</a>
-<a href="https://cobbleton.com/discord" target="_blank" class="coverpage-button">Discord</a>
-<a href="https://map.cobbleton.com" target="_blank" class="coverpage-button">Map</a>
-<a href="https://wiki.cobbleton.com" target="_blank" class="coverpage-button">Wiki</a>
+<a href="#/about" class="coverpage-button tooltip" data-text="What we're all about and some of our highlighted features">About Us</a>
+<a href="#/apply" class="coverpage-button tooltip" data-text="Information on how to apply for a Player rank">Apply</a>
+<a href="#/rules" class="coverpage-button tooltip" data-text="Guidelines to keep our community safe and thriving">Rules</a>
+<a href="#/guides/general/first-day" class="coverpage-button tooltip" data-text="Various guides for the server, modpack, and discord">Guides</a>
+<a href="https://cobbleton.com/discord" target="_blank" class="coverpage-button tooltip" data-text="The place to ask questions, view upcoming events, and hang out">Discord</a>
+<a href="https://map.cobbleton.com" target="_blank" class="coverpage-button tooltip" data-text="Live maps for all of our worlds as well as our Infernal Transit Network">Maps</a>
+<a href="https://wiki.cobbleton.com" target="_blank" class="coverpage-button tooltip" data-text="Cobbleton lore, historical records, and a database of locations">Wiki</a>
 
 <footer class='coverpage-footer'>
 <a href="mailto:support@cobbleton.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>&nbsp;&nbsp;

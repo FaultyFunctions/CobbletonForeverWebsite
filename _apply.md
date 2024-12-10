@@ -8,7 +8,7 @@ Cobbleton Forever uses a graylist system. This means that you are able to connec
 
 Once you've decided you'd like to join our community, you can head over to our [Discord server](https://cobbleton.com/discord) and fill out a player application from the `#apply` channel.
 
-When you're accepted there is one last step you need to take. You need to login in-game and use the `/discord link` command to link your Minecraft and Discord accounts. This will award you with the player rank and you'll get full access to the server.
+When you're accepted, there is one last step you need to take. You need to login in-game and use the `/discord link` command to link your Minecraft and Discord accounts. This will award you with the player rank and you'll get full access to the server.
 
 <h3>TL;DR</h3>
 
