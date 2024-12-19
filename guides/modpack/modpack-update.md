@@ -21,8 +21,3 @@
 
 ### Done!
 After following these steps, your modpack should be updated and you should have all the default keybinds and resource packs loaded. Let us know if you run into any issues and we'll be happy to help you out.
-
-> [!WARNING]
-> If your game is crashing on step 2 of *Updating your Default Keybinds*, you will need to do either one of these two options:<br><br>
-> <span style="display: block; margin-left: 16px;">A. [Delete and reinstall the modpack from scratch](https://cobbleton.com/#/guides/modpack/modpack-install)</span><br>
-> <span style="display: block; margin-left: 16px;">B. Open your modpack folder. Then navigate to `options-profiles/Cobbleton Keybinds & Packs` and delete any files that mention sodium in their name.</span>
