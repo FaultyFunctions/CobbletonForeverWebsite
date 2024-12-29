@@ -25,7 +25,7 @@
 | <nobr>💬town-square</nobr>        | This is our general chat channel for players to use.                                                                   |
 | <nobr>🎉in-game-chat</nobr>       | A channel for bridging Discord and in-game Minecraft chats.                                                            |
 | <nobr>👋introductions</nobr>      | The place to post a little introduction about yourself.                                                                |
-| <nobr>✨moments</nobr>             | Share fun moments with the community                                                                                   |
+| <nobr>✨moments</nobr>             | Share screenshots of fun Minecraft/community moments                                                                   |
 | <nobr>🌸haiku-house</nobr>        | Post haikus for fun!                                                                                                   |
 | <nobr>📖quotebook</nobr>          | Post your favorite quotes from your fellow Cobbletonians.                                                              |
 | <nobr>📍points-of-interest</nobr> | A place to post general points of interest, player settlements, and builds that are open and useful to the community.  |
@@ -37,7 +37,7 @@
 ## Other Social Channels
 | Channel                          | Description                                         |
 |----------------------------------|-----------------------------------------------------|
-| <nobr>☕coffee-break</nobr>       | A channel for off-topic discussions                 |
+| <nobr>🧋tea-time</nobr>          | A channel for off-topic discussions                 |
 | <nobr>🃏other-games</nobr>       | Discuss games other than Minecraft                  |
 | <nobr>🐈wags-and-whiskers</nobr> | Post pictures of your adorable animal friends.      |
 | <nobr>🎨arts-and-crafts</nobr>   | Share your art and arts and crafts related hobbies! |
