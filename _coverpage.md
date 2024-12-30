@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![](_assets/cobbleton_forever_logo.png)
+![](_assets/images/cobbleton_forever_logo.png)
 
 > a classic-style Minecraft server with a focus on community and quality of life
 

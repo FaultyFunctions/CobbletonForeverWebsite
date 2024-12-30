@@ -1,11 +1,9 @@
-class Snowfall
-{
+class Snowfall {
 
-  constructor(canvas_id, options)
-  {
+  constructor(canvas_id, options) {
     this.options = {
       count: 100,
-      images: ["flake1.png", "flake2.png"],
+      images: ["flake1.png", "flake2.png", "flake3.png", "flake4.png", "flake5.png", "flake6.png", "flake7.png"],
       size: {
         min: 10,
         max: 30
@@ -14,12 +12,9 @@ class Snowfall
       halfVertical: 0
     };
 
-    if (options !== null)
-    {
-      for (let prop in this.options)
-      {
-        if (this.options.hasOwnProperty(prop) && options.hasOwnProperty(prop))
-        {
+    if (options !== null) {
+      for (let prop in this.options) {
+        if (this.options.hasOwnProperty(prop) && options.hasOwnProperty(prop)) {
           this.options[prop] = options[prop];
         }
       }
@@ -31,9 +26,8 @@ class Snowfall
     this.images = [];
     this.flakes = [];
 
-    this.options.images.forEach((src) =>
-    {
-      this.images.push(new (function() {
+    this.options.images.forEach((src) => {
+      this.images.push(new (function () {
         this.loaded = false;
         this.image = new Image();
         this.image.addEventListener("load", () => this.loaded = true);
@@ -45,8 +39,7 @@ class Snowfall
     window.addEventListener("resize", () => this.updateCanvasSize());
   }
 
-  updateCanvasSize()
-  {
+  updateCanvasSize() {
     // this.ctx.canvas.width = this.ctx.canvas.parentNode.offsetWidth;
     // this.ctx.canvas.height = this.ctx.canvas.parentNode.offsetHeight;
 
@@ -57,20 +50,16 @@ class Snowfall
     this.options.halfVertical = this.ctx.canvas.height / 2;
   }
 
-  rand(min, max)
-  {
+  rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  draw()
-  {
-    if (!this.stopped && !this.paused)
-    {
+  draw() {
+    if (!this.stopped && !this.paused) {
 
       this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 
-      for (let i = 0; i < this.flakes.length; i++)
-      {
+      for (let i = 0; i < this.flakes.length; i++) {
         this.flakes[i].draw();
       }
 
@@ -78,36 +67,30 @@ class Snowfall
     }
   }
 
-  start()
-  {
-    if (this.stopped)
-    {
+  start() {
+    if (this.stopped) {
       this.stopped = false;
 
-      for (let i = 0; i < this.options.count; i++)
-      {
+      for (let i = 0; i < this.options.count; i++) {
         this.flakes.push(new Flake(this.ctx, this.options, this.images[this.rand(0, this.images.length - 1)]));
       }
 
       this.draw();
     }
-    else if (this.paused)
-    {
+    else if (this.paused) {
       this.paused = false;
       this.draw();
     }
   }
 
-  stop()
-  {
+  stop() {
     this.flakes = [];
     this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
     this.stopped = true;
     this.paused = false;
   }
 
-  pause()
-  {
+  pause() {
     this.paused = true;
   }
 

@@ -1,4 +1,4 @@
-![](_assets/cobbleton_forever_logo.png)
+![](_assets/images/cobbleton_forever_logo.png)
 
 <section class='coverpage'>
 
