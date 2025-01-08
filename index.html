@@ -19,8 +19,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 		<link rel="preload" as="image" href="https://github.com/FaultyFunctions/CobbletonForeverWebsite/blob/main/_assets/images/cover_image.avif?raw=true">
 		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
-		<script type="text/javascript" src="_assets/js/Flake.js"></script>
-		<script type="text/javascript" src="_assets/js/Snowfall.js"></script>
 		<style>
 			:root {
 				/* Basic */
@@ -255,16 +253,6 @@
 				color: #ff0000;
 			}
 
-			#snowfall {
-				pointer-events: none;
-				z-index: 1000;
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100vw;
-				height: 100vh;
-			}
-
 			.tooltip {
 				position:relative; /* making the .tooltip span a container for the tooltip text */
 				border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
@@ -323,7 +311,6 @@
 		</style>
 	</head>
 	<body>
-		<canvas id="snowfall"></canvas>
 		<div id="app"></div>
 		<script>
 			// Docsify Configuration
@@ -342,24 +329,6 @@
 				'flexible-alerts': {
 				},
 			}
-			let snow = new Snowfall("#snowfall", {
-				images: [
-					"_assets/images/snowflakes/flake1.png",
-					"_assets/images/snowflakes/flake2.png",
-					"_assets/images/snowflakes/flake3.png",
-					"_assets/images/snowflakes/flake4.png",
-					"_assets/images/snowflakes/flake5.png",
-					"_assets/images/snowflakes/flake6.png",
-					"_assets/images/snowflakes/flake7.png"
-				],
-				count: 25,
-				size: {
-					min: 10,
-					max: 30
-				}
-			});
-			
-			snow.start();
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
