@@ -3,7 +3,7 @@
 ## Information Channels
 | Channel                        | Description                                                                                                                |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <nobr>📑│rules-and-info</nobr> | Community rules and useful links.                                                                                          |
+| <nobr>📜│rules-and-info</nobr> | Community rules and useful links.                                                                                          |
 | <nobr>🔔│announcements</nobr>  | Important announcements from the server staff. Generally used for announcing events, update overviews, and server changes. |
 | <nobr>🚧│maintenance</nobr>    | Server maintenance announcements                                                                                           |
 | <nobr>📕│changelog</nobr>      | Every change made to the server, modpack, and Discord.                                                                     |
@@ -29,7 +29,7 @@
 | <nobr>🌸│haiku-house</nobr>        | Post haikus for fun!                                                                                                  |
 | <nobr>📖│quotebook</nobr>          | Post your favorite quotes from your fellow Cobbletonians.                                                             |
 | <nobr>📍│points-of-interest</nobr> | A place to post general points of interest, player settlements, and builds that are open and useful to the community. |
-| <nobr>📜│player-exchange</nobr>    | Create requests for things like, trades, builds, or anything else that you want fulfilled by other community members. |
+| <nobr>🪙│player-exchange</nobr>    | Create requests for things like, trades, builds, or anything else that you want fulfilled by other community members. |
 | <nobr>📦│suggestion-box</nobr>     | Make a suggestion for how we can improve your experience!                                                             |
 
 ## Support
