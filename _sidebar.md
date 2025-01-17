@@ -5,6 +5,7 @@
 - Gameplay
 	* [Capture Crystals](guides/gameplay/capture-crystals.md)
 	* [Resource World](guides/gameplay/resource-world.md)
+	* [Creative World](guides/gameplay/creative-world.md)
 - Modpack
 	* [Installing the Modpack](guides/modpack/modpack-install.md)
 	* [Updating the Modpack](guides/modpack/modpack-update.md)
