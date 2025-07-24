@@ -13,7 +13,7 @@
 <a href="https://cobbleton.com/discord" target="_blank" class="coverpage-button tooltip" data-text="The place to ask questions, view upcoming events, and hang out">Discord</a>
 <a href="https://map.cobbleton.com" target="_blank" class="coverpage-button tooltip" data-text="Live maps for all of our worlds as well as our Infernal Transit Network">Maps</a>
 <a href="https://wiki.cobbleton.com" target="_blank" class="coverpage-button tooltip" data-text="Cobbleton lore, historical records, and a database of locations">Wiki</a>
-<a href="https://shop.cobbleton.com" target="_blank" class="coverpage-button tooltip" data-text="Financially support your favorite Minecraft server">Wiki</a>
+<a href="https://shop.cobbleton.com" target="_blank" class="coverpage-button tooltip" data-text="Financially support your favorite Minecraft server">Shop</a>
 
 <footer class='coverpage-footer'>
 <a href="mailto:support@cobbleton.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>&nbsp;&nbsp;
